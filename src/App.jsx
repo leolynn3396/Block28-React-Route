@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from "react-router-dom";  // 1. Add the Link component to the 'react-router-dom' import statement object
-import '/src/components/Blue.jsx'
-import '/src/components/Red.jsx'
-import '/src/components/Home.jsx'
 import './App.css'
+import './components/Blue.jsx'
+import './components/Red.jsx'
+import './components/Home.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,13 +14,15 @@ function App() {
       <div id="container">
         <div id="navbar"> 
           <Link to="/blue"> {<h3>Blue</h3>}</Link>  
+          <Link to="/green"> {<h3>Green</h3>}</Link>  
           <Link to="/red"> {<h3>Red</h3>}</Link>
           <Link to="/"> {<h3>Home</h3>}</Link>
         </div>
-        <div id="main-section">
+        <div id="main-section">  
             <Routes>
                <Route path="/blue" element={<h1>Blue</h1>} />
-               <Route path="/red" element={<h1>Red</h1>} />
+               <Route path="/green" element={<h1>Green</h1>} />
+               <Route path="/red" element={<h1>Red</h1>}/>
                <Route path="/" element={<h1>Home</h1>} />
             </Routes>
           </div>
