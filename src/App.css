@@ -4,6 +4,15 @@
   padding: 2rem;
   text-align: center;
 }
+/* #navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: beige;
+  color:white;
+  padding: 10px
+} */
 
 .logo {
   height: 6em;
@@ -41,3 +50,9 @@
   color: #888;
 }
 
+.footer {
+  position: fixed;
+  display: fixed;
+  text-align: center;
+  bottom: 0;
+}
